@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'products',
-    'Django'
     
 ]
 
@@ -50,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    
     
 ]
 
@@ -73,6 +72,8 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {'COERCE_DECIMAL_TO_STRING': False}
 
 WSGI_APPLICATION = 'products_project.wsgi.application'
 
